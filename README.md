@@ -44,3 +44,34 @@ Built using:
 `calculate_savings_rate(transactions)`
 
 Formula:
+(income − expenses) / income
+
+- Income = deposits  
+- Expenses = withdrawals  
+
+Displayed as a Streamlit KPI metric.
+
+### 4. **Short-Term Expense Forecasting**
+`predict_future_expenses(transactions, months_ahead=3)`
+
+- Computes average daily spending  
+- Scales to monthly spending  
+- Applies incremental projected growth (+2% per month)
+- Outputs a time series for Plotly line chart  
+
+### 5. **AI-Generated Financial Plan**
+`generate_financial_plan(simulated_data, user_goal)`
+
+- Sends structured user financial profile to GPT  
+- Produces a detailed personalized plan including:
+  - Spending diagnosis
+  - Savings optimization strategies
+  - Debt management guidelines
+  - Practical, actionable recommendation  
+
+### 6. **Follow-Up Q&A Assistant**
+
+- Users can ask questions about their finances  
+- GPT responds using contextual data from the simulation  
+- Custom prompt injection ensures responses are personalized  
+
